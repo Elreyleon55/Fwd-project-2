@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <section class="back-ground">
+    <!-- <section class="back-ground">
       <img src="images/bg.jpg" alt="our back ground image">
-    </section>
+    </section> -->
     <header>
-      <div class="logo-images">
-        <img src="images/small-logo.jpg" alt="A picture of a small logo for our site">
-        <img src="images/logo.png" alt="A picture of our logo food explorer" />
+      <div class="header-section">
+        <img class="mobile-logo" src="images/small-logo.jpg" alt="A picture of a small logo for our site">
+        <img class="desktop-logo" src="images/logo.png" alt="A picture of our logo food explorer" />
+        <img src="images/menu.png" alt="A picture of our hamburger menu" />
       </div>
-      <img src="images/menu.png" alt="A picture of our hamburger menu" />
-      <nav>
+      <nav class="main-navigation-mobile-section">
+        <input type="text" name="search" placeholder="Search">
         <img src="images/search.png" alt="A image of a magnifying glass" />
 
         <ul>
@@ -27,7 +29,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="site-wrapper">
       <section class="banner-section">
         <blockquote>
           <img src="images/mussel.jpg" alt="A picture of mussels in a bowl" />

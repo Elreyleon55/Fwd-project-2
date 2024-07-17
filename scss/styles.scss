@@ -1,2 +1,5 @@
-@import 'base';
-@import 'header';
+@use 'base';
+@use 'header';
+@use 'variables';
+@use 'reset';
+
