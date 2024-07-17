@@ -1,3 +1,6 @@
+@use 'variables' as *;
+
+
 body {
-  color: red($color: #000000);
+  background: $backGroundImage;
 }
