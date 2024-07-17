@@ -1,2 +1,23 @@
 
+//hiding elemetns that are not needed for now
+
+.desktop-logo {
+  visibility: hidden;
+}
+
+.header-section {
+  background-color: white;
+  width: 100%;
+   img {
+    padding: 10px;
+   }
+}
+
+
+.main-navigation-mobile-section {
+  border: 2px solid rgb(0, 0, 61);
+}
+
+
+//height for drop down start a 0 and then when opend go to 15.7rem 
 
