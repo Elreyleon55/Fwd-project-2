@@ -5,15 +5,18 @@
   visibility: hidden;
 }
 
+
+//header section
 .header-section {
   background-color: white;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
    img {
     padding: 10px;
    }
 }
-
-
+// this is for the drop down search area
 .main-navigation-mobile-section {
   border: 2px solid rgb(0, 0, 61);
 
@@ -30,7 +33,31 @@
     }
   }
 }
+
+// for dropdown section in
+
+.dropdown-sections {
+    background-color: rgb(98, 98, 255);
+   
+ ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  
+  li {
+    margin: none;
+    width: 100%;
+    border: 1px solid black;
  
+    
+  }
+  
+ }
+}
+
 
 //height for drop down start a 0 and then when opend go to 15.7rem 
 
