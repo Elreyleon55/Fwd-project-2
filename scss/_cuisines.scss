@@ -1,3 +1,4 @@
+@use 'variables' as *;
 
 .cuisines {
     margin: 0.5rem;
@@ -8,12 +9,14 @@
             color: white;
             padding: 1rem 0.5rem;
             margin: 0;
+            @include headFont;
         }
 
         li {
             list-style-type: none;
             padding: 0.5rem;
             flex: 1 0 30vw;
+            @include bodyFont;
         }
 
         ul {
