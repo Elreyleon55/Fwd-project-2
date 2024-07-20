@@ -10,6 +10,7 @@
             color: white;
             padding: 1rem 0.5rem;
             margin: 0;
+            @include headFont;
         }
 
         img {
