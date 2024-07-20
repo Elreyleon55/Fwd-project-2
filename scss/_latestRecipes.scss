@@ -8,7 +8,7 @@
         h2 {
             background-color: $mainColor;
             color: white;
-            padding: 1rem 0.5rem;
+            padding: 0.625rem .625rem;
             margin: 0;
             @include headFont;
         }
@@ -19,11 +19,15 @@
             $mainColor -2px 1px, 
             $mainColor 1px -2px, 
             $mainColor 1px 1px;
+            margin-right: 0.75rem;
         }
 
         td {
-            padding: 0.5rem;
+            padding: 0.75rem;
             width: auto;
+            @include bodyFont;
+            display: flex;
+            align-items: center;
         }
 
         tr {
@@ -32,11 +36,11 @@
 
         .tableRow2,
         .tableRow4 {
-            background-color: lightgray; /* Your desired background color */
+            background-color: rgb(222, 222, 222); /* Your desired background color */
         }
 
         table {
-            width: 98.5vw;
+            width: 100%;
             border-collapse: collapse;
         }
 }
