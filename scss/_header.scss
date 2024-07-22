@@ -1,21 +1,145 @@
 
+//creating variables will have to eatierh delete or move later.
+
+$backcolor: #1B71A9;
+$textcolor: white;
+
+
+
+
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section, .site-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
 //hiding elemetns that are not needed for now
 
 .desktop-logo {
   visibility: hidden;
 }
 
+
+//header section
 .header-section {
+  flex-wrap: wrap;
+  box-sizing: border-box;
   background-color: white;
+  align-items: center;
+  overflow: hidden;
   width: 100%;
-   img {
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  height: 3rem;
+   .hamburger {
+    width: 27px; 
+    height: 27px; 
+    cursor: pointer;
+    margin-left: 5px;
    }
 }
 
-
 .main-navigation-mobile-section {
-  border: 2px solid rgb(0, 0, 61);
+  border: 0.5px solid rgb(0, 0, 61);
+  .search-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(199, 199, 199);
+    color: black;
+    border-radius: 7px;
+    input {
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+
+// for dropdown section in
+
+//creating variables will have to eatierh delete or move later.
+
+
+
+.dropdown-sections {
+ ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  ul:hover {
+    background-color: red;
+  }
+  
+  li {
+    // width: 100%;
+    border: 0.5px solid rgb(70, 70, 70);
+    padding: 5px;
+    color: white;
+    background-color:#1B71A9;
+    transition: all 0.3s ease;
+    mix-blend-mode: difference;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  li:hover {
+    color: $backcolor;
+    background-color: $textcolor;
+    cursor: pointer;
+    a {
+      color: $backcolor;
+    }
+  }
+  
+ }
+
+ .search-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgb(199, 199, 199);
+  color: black;
+  border-radius: 7px;
+  input {
+    background: transparent;
+    border: none;
+  }
+}
+.li-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background-color: white;
+}
+
+.icon-facebook {
+  width: 18px; 
+  height: 18px; 
+}
+
+.icon-google {
+  width: 18px; 
+  height: 18px; 
+}
+
+.icon-twitter {
+  width: 18px; 
+  height: 18px; 
+}
+
+
+
+ 
 }
 
 
