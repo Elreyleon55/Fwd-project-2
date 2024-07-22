@@ -68,7 +68,6 @@ width: 4rem;
 
 
 .dropdown-sections {
-  
  ul{
   display: flex;
   flex-direction: column;
@@ -81,19 +80,27 @@ width: 4rem;
   }
   
   li {
-    width: 100%;
+    // width: 100%;
     border: 0.5px solid rgb(70, 70, 70);
     padding: 5px;
     color: white;
     background-color:#1B71A9;
     transition: all 0.3s ease;
     mix-blend-mode: difference;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
   li:hover {
     color: $backcolor;
     background-color: $textcolor;
     cursor: pointer;
+    a {
+      color: $backcolor;
+    }
   }
+  
  }
 
  .search-bar {
