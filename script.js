@@ -1,6 +1,7 @@
-//connection check
-console.log("hello I am connected");
+//test
+console.log("I am connected");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //declarrying my variables
 
@@ -26,4 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.style.display = menu.style.display = "block";
   });
 >>>>>>> fad02cc (chaching it up)
+=======
+//getting variables
+
+const hamburgerMenu = document.querySelector(".hamburger");
+
+const dropdownmeu = document.querySelector(".main-navigation-mobile-section");
+
+//test
+console.log(dropdownmeu);
+console.log(hamburgerMenu);
+
+//setting defualt styles of dropdown
+
+dropdownmeu.style.display = "none";
+
+//getting on click on button and changing styles
+
+hamburgerMenu.addEventListener("click", () => {
+  dropdownmeu.style.display =
+    dropdownmeu.style.display === "block" ? "none" : "block";
+>>>>>>> a409a14 (javascrip works)
 });
