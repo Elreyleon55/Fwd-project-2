@@ -33,10 +33,13 @@
   background-color: #1b71a9; 
   color: #fff; 
   text-decoration: none; 
-  float: right;
   font-weight: bold;
 }
 
+.read-more-container {
+  display: flex;
+  justify-content: flex-end; 
+}
 
 .food-info-1 p, .food-info-2 p {
   font-size: 1em; 
@@ -44,4 +47,11 @@
   color: #333; 
   margin-top: 0;
   margin-bottom: 10px; 
+}
+
+.older-post{
+  img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
