@@ -46,6 +46,10 @@ width: 4rem;
 
 .main-navigation-mobile-section {
   border: 0.5px solid rgb(0, 0, 61);
+
+    max-height: 0px;
+    // transition: max-height 3s ease-in;
+
   .search-bar {
     display: flex;
     justify-content: space-between;
@@ -53,12 +57,22 @@ width: 4rem;
     background-color: rgb(199, 199, 199);
     color: black;
     border-radius: 7px;
+    
     input {
       background: transparent;
       border: none;
+      width: 100%;
     }
+    
   }
 }
+
+
+.main-navigation-mobile-section.open {
+  max-height: 500px;
+    // transition: max-height 3s ease-in;
+}
+
 
 
 // for dropdown section in
@@ -75,12 +89,17 @@ width: 4rem;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+
+  z-index: -1;
+
   ul:hover {
     background-color: red;
   }
   
   li {
+
     // width: 100%;
+
     border: 0.5px solid rgb(70, 70, 70);
     padding: 5px;
     color: white;
@@ -137,11 +156,28 @@ width: 4rem;
   height: 18px; 
 }
 
-
-
  
 }
 
+@media (max-width: 20.625em) {
 
-//height for drop down start a 0 and then when opend go to 15.7rem 
+  //replacing logo to tabled version
 
+  .header-section {
+
+  }
+
+
+  .mobile-logo {
+    visibility: hidden;
+  }
+
+  .desktop-logo {
+    visibility: visible;
+    width: 200px;
+    height: auto;
+  }
+
+
+
+}
