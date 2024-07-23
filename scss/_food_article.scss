@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .food-info-1,
 .food-info-2 {
   background-color: #fcfbfb;
@@ -6,11 +8,14 @@
   padding: 20px;
   max-width: 600px;
   box-shadow: 0 2px 4px rgba(226, 12, 12, 0.1);
+  display: flex; 
+  flex-direction: column;
 }
 
 
 .food-info-1 h2, .food-info-2 h2 {
   font-size: 1.5em; 
+  @include headFont;
   color: #1b71a9; 
 }
 
@@ -18,6 +23,7 @@
   /*max-width: 100%; */
   height: auto; 
   margin-bottom: 10px; 
+
 }
 
 
@@ -27,11 +33,14 @@
   background-color: #1b71a9; 
   color: #fff; 
   text-decoration: none; 
+  float: right;
+  font-weight: bold;
 }
 
 
 .food-info-1 p, .food-info-2 p {
   font-size: 1em; 
+  @include bodyFont;
   color: #333; 
   margin-top: 0;
   margin-bottom: 10px; 
