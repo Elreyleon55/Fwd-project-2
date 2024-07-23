@@ -1,19 +1,32 @@
-//connection check
-console.log("hello I am connected");
+//test
+console.log("I am connected");
 
-//declarrying my variables
+//getting variables
 
 const hamburgerMenu = document.querySelector(".hamburger");
-const menu = document.querySelector(".main-navigation-mobile-section");
 
-menu.style.display = "block";
+const dropdownmeu = document.querySelector(".main-navigation-mobile-section");
 
+//test
+console.log(dropdownmeu);
 console.log(hamburgerMenu);
 
-hamburgerMenu.addEventListener("click", () => {
-  if (menu.style.display === "style") {
-  }
+//setting defualt styles of dropdown
 
-  menu.style.display === "block" ? "none" : "block";
-  console.log("click is going trough");
+dropdownmeu.style.display = "none";
+
+//getting on click on button and changing styles
+//&adding a class list to my hamburger menu to add a slide down animation in css
+
+hamburgerMenu.addEventListener("click", () => {
+  dropdownmeu.style.display =
+    dropdownmeu.style.display === "block" ? "none" : "block";
+  if (dropdownmeu.style.display === "block") {
+    dropdownmeu.classList.toggle("open");
+    console.log("the first one");
+  } else {
+    dropdownmeu.classList.toggle("open");
+    console.log("the second one");
+  }
+  console.log(dropdownmeu);
 });
