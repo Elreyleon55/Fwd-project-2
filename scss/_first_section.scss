@@ -28,8 +28,9 @@
         width: 100%;
     }
 
-@media screen and (min-width: 20.625em) {
-    img {
-        display:
+@media (min-width: 20.625em) {
+
+    .salad-picture, .pancake-picture {
+        flex-direction: row;
 }
 }
