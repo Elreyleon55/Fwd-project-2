@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
+    <!-- script -->
+    <script src="script.js" defer></script>
 
   </head>
   <body>
@@ -19,9 +21,9 @@
     </section> -->
     <header>
       <div class="header-section">
-        <img class="mobile-logo" src="images/small-logo.jpg" alt="A picture of a small logo for our site">
-        <img class="desktop-logo" src="images/logo.png" alt="A picture of our logo food explorer" />
-        <img src="images/menu.png" alt="A picture of our hamburger menu" />
+        <img class="mobile-logo" class="logo" src="images/small-logo.jpg" alt="A picture of a small logo for our site">
+        <img src="images/menu.png" alt="A picture of our hamburger menu" class="hamburger" />
+        <img class="desktop-logo" src="images/logo.png" alt="A picture of our logo food explorer"/>
       </div>
       <nav class="main-navigation-mobile-section">
         <div class="search-bar">
@@ -30,11 +32,16 @@
         </div>
         <div class="dropdown-sections"> 
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Reviews</li>
-            <li>Recipes</li>
-            <li>Contact</li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Home">About</a></li>
+            <li><a href="#Home">Reviews</a></li>
+            <li><a href="#Home">Recepies</a></li>
+            <li><a href="#Home">Contact</a></li>
+            <li class="li-icons">
+              <img class="icon-facebook" src="images/iconmonstr-compressed.png" alt="icon of the facebook symbol">
+              <img class="icon-google" src="images/google.png" alt="icon of the google symbol">
+              <img class="icon-twitter" src="images/iconmonstr-twitter-1-240 (1).png" alt="icon of the twitter symbol">
+            </li>
           </ul>
         </div>
       </nav>
@@ -42,18 +49,26 @@
     <main class="site-wrapper">
       <section class="banner-section">
         <blockquote>
-          <img src="images/mussel.jpg" alt="A picture of mussels in a bowl" />
+          <img class="mussels-picture" src="images/mussel.jpg" alt="A picture of mussels in a bowl" />
+          <img class="mussels-picture" src="images/mussel.jpg" alt="A picture of mussels in a bowl" />
           <p>Lorem, ipsum dolor sit amet consectetur.</p>
         </blockquote>
         <blockquote>
           <img
+          class="mussels-picture"
+          class="mussels-picture"
             src="images/salad.jpg"
             alt="A picture of salad with patatoes in a bowl"
           />
           <p>Lorem, ipsum dolor sit amet consectetur.</p>
         </blockquote>
         <blockquote>
-          <img src="images/pancake.jpg" alt="A picture of pancake on a plate" />
+          <img 
+          class="mussels-picture"
+          src="images/pancake.jpg" alt="A picture of pancake on a plate" />
+          <img 
+          class="mussels-picture"
+          src="images/pancake.jpg" alt="A picture of pancake on a plate" />
           <p>Lorem, ipsum dolor sit amet consectetur.</p>
         </blockquote>
       </section>
@@ -134,7 +149,8 @@
         <article>
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p>Lorem ipsum dolor sit amet.</p>
-          <img src="images/pasta.jpg" alt="A plate of pasta and shrimp">
+          <img class="mussels-picture"  src="images/pasta.jpg" alt="A plate of pasta and shrimp" >
+          <img class="mussels-picture"  src="images/pasta.jpg" alt="A plate of pasta and shrimp" >
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt.</p>
           <p><a href="">Read More</a></p>
         </article>
@@ -143,7 +159,8 @@
         <article>
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p>Lorem ipsum dolor sit amet.</p>
-          <img src="images/ramen.jpg" alt="A plate of ramen">
+          <img class="mussels-picture" src="images/ramen.jpg" alt="A plate of ramen">
+          <img class="mussels-picture" src="images/ramen.jpg" alt="A plate of ramen">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt.</p>
           <p><a href="">Read More</a></p>
         </article>
