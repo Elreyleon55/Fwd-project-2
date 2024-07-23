@@ -2,3 +2,8 @@ footer {
     background-color: #1B71A9;
     height: 3rem;
 }
+
+footer p {
+    text-align: center;
+}
+@include bodyFont
