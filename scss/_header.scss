@@ -159,17 +159,21 @@ width: 4rem;
  
 }
 
-@media (max-width: 20.625em) {
+@media (min-width: 20.625em) {
 
   //replacing logo to tabled version
 
   .header-section {
-
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    // gap: 20px;
   }
 
 
   .mobile-logo {
     visibility: hidden;
+    
   }
 
   .desktop-logo {
