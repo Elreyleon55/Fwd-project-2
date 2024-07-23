@@ -4,10 +4,8 @@
 
 //creating variables will have to eatierh delete or move later.
 
-$backcolor: #1b71a9;
-$textcolor: white;
-
-
+// $backcolor: #1b71a9;
+// $textcolor: white;
 
 
 // to keep the background image not overflowing 
@@ -41,22 +39,23 @@ width: 4rem;
 //hiding elemetns that are not needed for now
 
 .desktop-logo {
-  visibility: hidden;
+  display: none;
 }
 
 
 //header section
 .header-section {
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  // flex-wrap: wrap;
+  // box-sizing: border-box;
   background-color: white;
   align-items: center;
-  overflow: hidden;
-  width: 100%;
+  // overflow: hidden;
+  // width: 100%;
   display: flex;
+  // flex-direction: row;
   justify-content: space-between;
   padding: 5px;
-  height: 3rem;
+  // height: 3rem;
    .hamburger {
     width: 27px; 
     height: 27px; 
@@ -66,7 +65,7 @@ width: 4rem;
 }
 
 .main-navigation-mobile-section {
-  border: 0.5px solid rgb(0, 0, 61);
+   border: 0.5px solid rgb(0, 0, 61);
 
     max-height: 0px;
     // transition: max-height 3s ease-in;
@@ -121,7 +120,7 @@ width: 4rem;
       color: white;
       background-color: $mainColor;
       transition: all 0.3s ease;
-      mix-blend-mode: difference;
+      // mix-blend-mode: difference;
       a {
         text-decoration: none;
         color: white;
@@ -138,7 +137,6 @@ width: 4rem;
   }}
     
   
- 
 
  .search-bar {
   display: flex;
@@ -175,26 +173,42 @@ width: 4rem;
 }
 
 
-
+//switching mobile logo to desktop
 @media (min-width: 20.625em) {
-
 
   .header-section {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     // gap: 20px;
   }
 
 
   .mobile-logo {
-    visibility: hidden;
+    display: none;
     
   }
 
   .desktop-logo {
-    visibility: visible;
-    width: 200px;
+    display: block;
+    width: 70%;
     height: auto;
+    // transform: translateX(-65px)
+    max-width: 350px;
   }
+}
+
+
+//taking apart the li dropdown & adding evrything except the logos
+
+@media (min-width: 31.25em) {
+
+  .hamburger {
+    display: none;
+  }
+
+
+  .main-navigation-mobile-section {
+    display: block;
+  }
+
 }
