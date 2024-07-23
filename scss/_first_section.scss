@@ -1,0 +1,28 @@
+.banner-section {
+    @include headFont;
+    margin: 0.5rem;
+}
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 15rem;
+    }
+    blockquote,
+    h2 {
+        margin: 0;
+    }
+    blockquote {
+        position: relative;
+    }
+    h2 {
+        position: absolute;
+        bottom: 0.25rem;
+        z-index: 1;
+        color: white;
+        background-color: #000000bf;
+        opacity: 1;
+        padding: 0.625rem;
+        width: 100%;
+    }
+
+
