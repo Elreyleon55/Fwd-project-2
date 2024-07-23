@@ -1,8 +1,11 @@
 .banner-section {
     @include headFont;
     margin: 0.5rem;
+    display: flex;
+    
 }
     img {
+        flex-direction: column;
         width: 100%;
         object-fit: cover;
         height: 15rem;
@@ -20,9 +23,13 @@
         z-index: 1;
         color: white;
         background-color: #000000bf;
-        opacity: 1;
+        opacity: 0.2;
         padding: 0.625rem;
         width: 100%;
     }
 
-
+@media screen and (min-width: 20.625em) {
+    img {
+        display:
+}
+}
