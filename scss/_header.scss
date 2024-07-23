@@ -1,6 +1,24 @@
 
 //creating variables will have to eatierh delete or move later.
 
+$backcolor: #1b71a9;
+$textcolor: white;
+
+
+
+
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section, .site-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
+//creating variables will have to eatierh delete or move later.
+
 $backcolor: #1B71A9;
 $textcolor: white;
 
@@ -82,6 +100,8 @@ width: 4rem;
 
 
 .dropdown-sections {
+    background-color: rgb(98, 98, 255);
+   
  ul{
   display: flex;
   flex-direction: column;
@@ -89,17 +109,9 @@ width: 4rem;
   margin: 0 auto;
   text-align: center;
   width: 100%;
-
-  z-index: -1;
-
-  ul:hover {
-    background-color: red;
-  }
   
   li {
-
     // width: 100%;
-
     border: 0.5px solid rgb(70, 70, 70);
     padding: 5px;
     color: white;
@@ -156,12 +168,12 @@ width: 4rem;
   height: 18px; 
 }
 
- 
-}
+
 
 @media (min-width: 20.625em) {
 
-  //replacing logo to tabled version
+
+
 
   .header-section {
     display: flex;
@@ -181,7 +193,9 @@ width: 4rem;
     width: 200px;
     height: auto;
   }
+  }
 
 
 
-}
+//height for drop down start a 0 and then when opend go to 15.7rem 
+
