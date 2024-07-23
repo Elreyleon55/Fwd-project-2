@@ -2,7 +2,6 @@
 .food-info-2 {
   background-color: #fcfbfb;
   border: 1px solid #ddd;
-  border-radius: 8px;
   margin-bottom: 20px;
   padding: 20px;
   max-width: 600px;
@@ -13,7 +12,6 @@
 .food-info-1 h2, .food-info-2 h2 {
   font-size: 1.5em; 
   color: #1b71a9; 
-  margin-bottom: 10px; 
 }
 
 .food-info-1 img, .food-info-2 img {
@@ -29,4 +27,12 @@
   background-color: #1b71a9; 
   color: #fff; 
   text-decoration: none; 
+}
+
+
+.food-info-1 p, .food-info-2 p {
+  font-size: 1em; 
+  color: #333; 
+  margin-top: 0;
+  margin-bottom: 10px; 
 }
