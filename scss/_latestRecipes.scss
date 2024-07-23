@@ -1,32 +1,46 @@
+    @use 'variables' as *;
 
-.latest-recipes,
-.cuisines {
-    // width: 100%;
-    // max-width: 18.75rem;
-    margin: 0 auto;
-    background-color: white;
-}
 
 .latest-recipes {
-}
+    margin: 0.5rem;
+    background-color: white;
 
-.cuisines h2 {
-    background-color: #1B71A9;
-    color: white;
-    padding: 1rem 0.5rem;
-    margin: 0.5rem 0rem;
-}
+        h2 {
+            background-color: $mainColor;
+            color: white;
+            padding: 0.625rem .625rem;
+            margin: 0;
+            @include headFont;
+        }
 
-.cuisines li {
-    list-style-type: none;
-    padding: 0.5rem;
-    flex: 1 0 30vw;
-}
+        img {
+            box-shadow: 
+            $mainColor -2px -2px, 
+            $mainColor -2px 1px, 
+            $mainColor 1px -2px, 
+            $mainColor 1px 1px;
+            margin-right: 0.75rem;
+        }
 
-.cuisines ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0.5rem;
-    margin: 0;
-    justify-content: flex-start;
+        td {
+            padding: 0.75rem;
+            width: auto;
+            @include bodyFont;
+            display: flex;
+            align-items: center;
+        }
+
+        tr {
+            width: 18.75rem;
+        }
+
+        .tableRow2,
+        .tableRow4 {
+            background-color: #E9E9E9; /* Your desired background color */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 }
