@@ -30,3 +30,25 @@ hamburgerMenu.addEventListener("click", () => {
   }
   console.log(dropdownmeu);
 });
+
+//settinf my media min width to a variable
+const mediaQuery = window.matchMedia("(min-width: 31.25em)");
+
+//function checks if mediaquery
+function handleMediaQueryChange(mediaQuery) {
+  //this cheks if the coniditon specified is true
+  if (mediaQuery.matches) {
+    console.log("the viewport is less then 500px");
+    dropdownmeu.style.display = "block";
+    // dropdownmeu.classList.toggle("open");
+  } else {
+    console.log("the viewport is more then 500px");
+    dropdownmeu.style.display = "none";
+    // dropdownmeu.classList.toggle("open");
+  }
+}
+//adds a argument to the function
+handleMediaQueryChange(mediaQuery);
+
+///gets the veriable to litsen to changes and then ca;;s the function
+mediaQuery.addEventListener("change", handleMediaQueryChange);

@@ -67,7 +67,7 @@ width: 4rem;
 .main-navigation-mobile-section {
    border: 0.5px solid rgb(0, 0, 61);
 
-    max-height: 0px;
+    max-height: 500px;
     // transition: max-height 3s ease-in;
 
   .search-bar {
@@ -90,6 +90,7 @@ width: 4rem;
 
 .main-navigation-mobile-section.open {
   max-height: 500px;
+  // height: 500px;
     // transition: max-height 3s ease-in;
 }
 
@@ -197,8 +198,14 @@ width: 4rem;
   }
 }
 
+  .search-bar {
+  display: block;
+  display: flex;
+  visibility: visible;
+    }
 
 //taking apart the li dropdown & adding evrything except the logos
+
 
 @media (min-width: 31.25em) {
 
@@ -206,9 +213,19 @@ width: 4rem;
     display: none;
   }
 
-
   .main-navigation-mobile-section {
     display: block;
+    max-height: 500px;
+
+      // transition: max-height 3s ease-in;
   }
+  .li-icons {
+    display: none;
+  }
+
+    // .flex-512-getting-back {
+    //   display: flex;
+
+    // }
 
 }
