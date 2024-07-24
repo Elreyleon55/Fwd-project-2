@@ -2,7 +2,6 @@
 @use 'mixings' as *;
 
 
-
 //setting my tablet nav dispay to none by default 
 .header-section-500 {
   display: none;
@@ -10,6 +9,11 @@
 
 //getting for my icons for tablet mode off
 .icons-500 {
+  display: none;
+}
+
+//getting the search bar for desktopmode off 
+.search-bar-drop-down {
   display: none;
 }
 
@@ -71,23 +75,29 @@ width: 4rem;
 
 .main-navigation-mobile-section {
    border: 0.5px solid rgb(0, 0, 61);
-
+   background-color: rgb(199, 199, 199);
     max-height: 500px;
     // transition: max-height 3s ease-in;
 
   .search-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: rgb(199, 199, 199);
-    color: black;
-    border-radius: 7px;
+
+    @include search-bar();
+    // display: flex;
+    // justify-content: space-between;
+    // padding: 5px;
+    // background-color: rgb(199, 199, 199);
+    // color: black;
+    // border-radius: 7px;
     
-    input {
-      background: transparent;
-      border: none;
-      width: 100%;
-    }
+    @include input();
+
+    
+
+    // input {
+    //   background: transparent;
+    //   border: none;
+    //   width: 100%;
+    // }
     
   }
 }
@@ -131,6 +141,7 @@ width: 4rem;
         text-decoration: none;
         color: white;
       }
+    
     }
     li:hover {
       color: $backcolor;
@@ -161,6 +172,10 @@ width: 4rem;
   justify-content: center;
   gap: 12px;
   background-color: white;
+  svg {
+    width: 1.125rem; 
+    height: 1.125rem; 
+  }
 }
 
 .icon-facebook {
@@ -204,9 +219,9 @@ width: 4rem;
 }
 
   .search-bar {
-  display: block;
-  display: flex;
-  visibility: visible;
+    display: block;
+    display: flex;
+    visibility: visible;
     }
 
 //taking apart the li dropdown & adding evrything except the logos
@@ -336,5 +351,23 @@ width: 4rem;
   
 
   }
+
+}
+
+//770px
+@media (min-width: 48.1em) {
+  //old search bar
+  .search-bar {
+    display: none;
+  }
+  //new seach bar
+  .search-bar-drop-down {
+    display: block;
+    @include search-bar();
+
+    @include input();
+   
+  }
+
 
 }
