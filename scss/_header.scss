@@ -8,6 +8,11 @@
   display: none;
 }
 
+//getting for my icons for tablet mode off
+.icons-500 {
+  display: none;
+}
+
 //creating variables will have to eatierh delete or move later.
 
 // $backcolor: #1b71a9;
@@ -206,7 +211,7 @@ width: 4rem;
 
 //taking apart the li dropdown & adding evrything except the logos
 
-
+//500px
 @media (min-width: 31.25em) {
 
 
@@ -257,13 +262,18 @@ width: 4rem;
     }
 
     .bottom-part {
+      background-color: darkblue;
       .dropdown-sections {
+            
+        width: 95%;
+        margin: 0 auto;
 
         ul {
           flex-direction: row;
           li {
             width: 100%;
             border: none;
+            
           }
         }
       }
@@ -273,20 +283,58 @@ width: 4rem;
 
 }
 
-
+//680px
 @media (min-width: 42.188em) {
   
   ul {
     flex-direction: row;
-    font-size: 110%;
+    // font-size: 110%;
     li {
       width: 100%;
       border: none;
-      font-size: 110%;
+      // font-size: 110%;
       a{
-        font-size: 110%;
+        font-size: 1.4rem;
       }
     }
+  }
+
+}
+
+//700px
+@media (min-width: 43.7em) {
+  .icons-500 {
+    display: block;
+    display: flex;
+    gap: 15px;
+    img{
+
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+ 
+  .search-bar {
+    // transform: translateX(2rem);
+    width: 10%;
+
+  }
+
+  .header-section-500 {
+    .top-part {
+      padding-right: 10px;
+    }
+    .search-bar {
+      transform: translateX(1.5rem);
+      width: 25%;
+  
+    }
+
+    .desktop-logo{
+      
+    }
+  
+
   }
 
 }
