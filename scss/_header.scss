@@ -1,6 +1,12 @@
 @use 'variables' as *;
+@use 'mixings' as *;
 
 
+
+//setting my tablet nav dispay to none by default 
+.header-section-500 {
+  display: none;
+}
 
 //creating variables will have to eatierh delete or move later.
 
@@ -45,17 +51,11 @@ width: 4rem;
 
 //header section
 .header-section {
-  // flex-wrap: wrap;
-  // box-sizing: border-box;
   background-color: white;
   align-items: center;
-  // overflow: hidden;
-  // width: 100%;
   display: flex;
-  // flex-direction: row;
   justify-content: space-between;
   padding: 5px;
-  // height: 3rem;
    .hamburger {
     width: 27px; 
     height: 27px; 
@@ -209,23 +209,84 @@ width: 4rem;
 
 @media (min-width: 31.25em) {
 
-  .hamburger {
+
+//tunring off the mobile header
+  .header-section {
     display: none;
   }
 
-  .main-navigation-mobile-section {
+  .main-navigation-mobile-section.open{
+    display: none;
+  }
+    .li-icons {
+      display: none;
+    }
+
+
+  .header-section-500{
     display: block;
-    max-height: 500px;
+    background-color: white;
 
-      // transition: max-height 3s ease-in;
+    .top-part {
+      display: flex;
+      padding: 1.25rem 0.4rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .desktop-logo {
+      width: 55%;
+      height: 2.2rem;
+    }
+
+    .search-bar {
+      justify-content: space-between;
+      width: 30%;
+      height: 2.5rem;
+      align-items: center;
+      
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.1rem;
+      }
+      input {
+        // padding: 5px;
+        width: 3.25rem;
+      }
+    }
+
+    .bottom-part {
+      .dropdown-sections {
+
+        ul {
+          flex-direction: row;
+          li {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+    }
+
   }
-  .li-icons {
-    display: none;
+
+}
+
+
+@media (min-width: 42.188em) {
+  
+  ul {
+    flex-direction: row;
+    font-size: 20%;
+    li {
+      width: 100%;
+      border: none;
+      font-size: 20%;
+      a{
+        font-size: 90%;
+      }
+    }
   }
-
-    // .flex-512-getting-back {
-    //   display: flex;
-
-    // }
 
 }

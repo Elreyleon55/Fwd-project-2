@@ -39,7 +39,7 @@ function handleMediaQueryChange(mediaQuery) {
   //this cheks if the coniditon specified is true
   if (mediaQuery.matches) {
     console.log("the viewport is less then 500px");
-    dropdownmeu.style.display = "block";
+    dropdownmeu.style.display = "none";
     // dropdownmeu.classList.toggle("open");
   } else {
     console.log("the viewport is more then 500px");
