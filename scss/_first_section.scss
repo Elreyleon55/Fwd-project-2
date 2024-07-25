@@ -12,7 +12,7 @@
     .banner-section img {
         // flex-direction: column;
         width: 100%;
-        // object-fit: cover;
+        object-fit: cover;
         // height: 15rem;
         height: auto;
         display: block;
@@ -32,7 +32,7 @@
     text-align: center;
     }
 
-@media (min-width: 20.625em) {
+@media (min-width: 41.625rem) {
 
     .salad-picture, .pancake-picture {
         display: flex;
@@ -40,5 +40,6 @@
         justify-content: center;
         align-items: center;
         // flex-wrap: wrap;
+        // margin: ;
 }
 }
