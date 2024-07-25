@@ -1,0 +1,189 @@
+
+
+ @mixin search-bar(){
+  display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(199, 199, 199);
+    color: black;
+    border-radius: 7px;
+ }
+
+ @mixin input(){
+      background: transparent;
+      border: none;
+      width: 100%;
+
+ }
+
+
+
+ @mixin hover-state() {
+  .f-blue {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .f-grey {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .f-blue {
+    transform: translateY(-1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .f-grey {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-navigation-mobile-section {
+  .facebook {
+    position: relative; /* Added for positioning */
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    @include hover-state();
+
+    svg {
+      position: absolute; /* Position absolutely within parent */
+      top: 0;
+      left: 0;
+    }
+
+  }
+  
+}
+
+
+@mixin hover-state() {
+  .g-blue {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .g-grey {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .g-blue {
+    transform: translateY(-1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .g-grey {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-navigation-mobile-section {
+  .google {
+    position: relative; /* Added for positioning */
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    @include hover-state();
+
+    svg {
+      position: absolute; /* Position absolutely within parent */
+      top: 0;
+      left: 0;
+    }
+
+  }
+  
+}
+
+@mixin hover-state() {
+  .t-blue {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .t-grey {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .t-blue {
+    transform: translateY(-1.16rem);
+    opacity: 0;
+  }
+
+  &:hover .t-grey {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-navigation-mobile-section {
+  .twitter {
+    position: relative; /* Added for positioning */
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    @include hover-state();
+
+    svg {
+      position: absolute; /* Position absolutely within parent */
+      top: 0;
+      left: 0;
+    }
+
+  }
+  
+}
+
+ //hoverstates for svgs
+
+//  @mixin hover-state(){
+    
+//   .f-grey:hover {
+//     display: block;
+//     transform: translateY(1.16rem);
+//       transition: 3s ease-in-out;
+//   }
+
+
+//   // .f-blue:hover {
+//   //     transform: translateY(-1.16rem);
+//   //     transition: 3s ease-in-out;
+//   // }
+
+//     :hover {
+//       display: block;
+//       transform: translateY(-1.16rem);
+      
+    
+//   }
+//  }
+
+@mixin hover-icons-500(){
+  svg:hover {
+    cursor: pointer;
+    fill: grey;
+    transition: .2s ease-in-out;
+    
+  }
+}
+
