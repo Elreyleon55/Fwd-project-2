@@ -51,6 +51,24 @@ $textcolor: white;
 .mussels-picture {
 width: 4rem;
 }
+//creating variables will have to eatierh delete or move later.
+
+$backcolor: #1B71A9;
+$textcolor: white;
+
+
+
+
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section, .site-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
 //hiding elemetns that are not needed for now
 
 .desktop-logo {
@@ -202,6 +220,8 @@ width: 4rem;
   }}
     
   
+
+
 
  .search-bar {
   display: flex;

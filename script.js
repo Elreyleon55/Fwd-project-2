@@ -1,7 +1,9 @@
+
 //test
 console.log("I am connected");
 
 //getting variables
+
 
 const hamburgerMenu = document.querySelector(".hamburger");
 
