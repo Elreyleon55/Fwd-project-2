@@ -8,10 +8,11 @@ footer {
 }
 
 footer p {
-
+    color: #ffffff;
     padding: .5rem;
     text-align: center;
+    @include bodyFont
 
 }
-// @include bodyFont
+
 
