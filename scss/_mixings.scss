@@ -36,11 +36,17 @@
     :hover {
       display: block;
       transform: translateY(-1.16rem);
-      transition: 3s ease-in-out;
+      
     
   }
-
-
-
-
  }
+
+@mixin hover-icons-500(){
+  svg:hover {
+    cursor: pointer;
+    fill: grey;
+    transition: .2s ease-in-out;
+    
+  }
+}
+

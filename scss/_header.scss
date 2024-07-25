@@ -331,7 +331,7 @@ width: 4rem;
     }
 
     .bottom-part {
-      background-color: darkblue;
+      background-color: $maiinColorALittleDarker;
       .dropdown-sections {
             
         width: 95%;
@@ -378,8 +378,9 @@ width: 4rem;
     display: block;
     display: flex;
     gap: 15px;
-    img{
-
+    @include hover-icons-500();
+    svg{
+      fill: $mainColor;
       width: 1.5rem;
       height: 1.5rem;
     }
@@ -413,17 +414,39 @@ width: 4rem;
 //770px
 @media (min-width: 48.1em) {
   //old search bar
+  .bottom-part {
+    .dropdown-sections {
+
+      a {
+        font-size: 1.5rem;
+      }
+
+
+     .search-bar-drop-down {
+      background-color: rgb(219, 219, 219);
+      color: black;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+      }
+      @include search-bar();
+      border-radius: 0;
+        input {
+          background: transparent;
+          border: none;
+          
+        }
+     }
+    }
+  }
+  
+  
+  
   .search-bar {
     display: none;
   }
-  //new seach bar
-  .search-bar-drop-down {
-    display: block;
-    @include search-bar();
-
-    @include input();
-   
-  }
+  
 
 
 }
