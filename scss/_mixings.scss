@@ -15,3 +15,31 @@
       width: 100%;
 
  }
+
+
+ //hoverstates for svgs
+
+ @mixin hover-state(){
+    
+  .f-grey {
+    // visibility: hidden;
+  }
+
+  .f-blue:hover {
+      // visibility: visible;
+      transform: translateY(-1.5rem);
+      transition: 3s ease-in-out;
+  }
+
+    :hover {
+      // visibility: visible;
+      display: block;
+      transform: translateY(-1.5rem);
+      transition: 3s ease-in-out;
+    
+  }
+
+
+
+
+ }
