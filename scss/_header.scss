@@ -326,7 +326,7 @@ width: 4rem;
       }
       input {
         // padding: 5px;
-        width: 3.25rem;
+        width: 7.1rem;
       }
     }
 
@@ -402,11 +402,6 @@ width: 4rem;
   
     }
 
-    .desktop-logo{
-      
-    }
-  
-
   }
 
 }
@@ -435,18 +430,42 @@ width: 4rem;
         input {
           background: transparent;
           border: none;
-          
         }
      }
     }
   }
   
-  
-  
   .search-bar {
     display: none;
   }
   
+
+
+}
+
+
+//for when body maxis out wisth and bacjground and sider keeps expanding
+
+@media (min-width: 65em) {
+
+.top-part {
+  width: 100%;
+  // align-items: center;
+  // max-width: 61.75rem;
+  gap: 35rem;
+}
+
+.bottom-part{
+ 
+  .dropdown-sections{
+    background-color: $maiinColorALittleDarker;
+    ul {
+      max-width: 61.75rem;
+      background-color: $mainColor;
+    }
+  }
+}
+
 
 
 }
