@@ -330,7 +330,7 @@ width: 4rem;
     }
 
     .bottom-part {
-      background-color: darkblue;
+      background-color: $maiinColorALittleDarker;
       .dropdown-sections {
             
         width: 95%;
@@ -377,8 +377,8 @@ width: 4rem;
     display: block;
     display: flex;
     gap: 15px;
-    img{
-
+    svg{
+      fill: $mainColor;
       width: 1.5rem;
       height: 1.5rem;
     }
@@ -412,6 +412,24 @@ width: 4rem;
 //770px
 @media (min-width: 48.1em) {
   //old search bar
+  .bottom-part {
+    .dropdown-sections {
+     .search-bar-drop-down {
+      background-color: rgb(219, 219, 219);
+      color: black;
+      border-radius: 0;
+      @include search-bar();
+        input {
+          
+          // @include input();
+          // border-radius: 0;
+        }
+     }
+    }
+  }
+  
+  
+  
   .search-bar {
     display: none;
   }
