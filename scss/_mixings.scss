@@ -21,20 +21,21 @@
 
  @mixin hover-state(){
     
-  .f-grey {
-    // visibility: hidden;
-  }
-
-  .f-blue:hover {
-      // visibility: visible;
-      transform: translateY(-1.5rem);
+  .f-grey:hover {
+    display: block;
+    transform: translateY(1.16rem);
       transition: 3s ease-in-out;
   }
 
+
+  // .f-blue:hover {
+  //     transform: translateY(-1.16rem);
+  //     transition: 3s ease-in-out;
+  // }
+
     :hover {
-      // visibility: visible;
       display: block;
-      transform: translateY(-1.5rem);
+      transform: translateY(-1.16rem);
       transition: 3s ease-in-out;
     
   }
