@@ -414,15 +414,26 @@ width: 4rem;
   //old search bar
   .bottom-part {
     .dropdown-sections {
+
+      a {
+        font-size: 1.5rem;
+      }
+
+
      .search-bar-drop-down {
       background-color: rgb(219, 219, 219);
       color: black;
-      border-radius: 0;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+      }
       @include search-bar();
+      border-radius: 0;
         input {
+          background: transparent;
+          border: none;
           
-          // @include input();
-          // border-radius: 0;
         }
      }
     }
@@ -433,14 +444,7 @@ width: 4rem;
   .search-bar {
     display: none;
   }
-  //new seach bar
-  .search-bar-drop-down {
-    display: block;
-    @include search-bar();
-
-    @include input();
-   
-  }
+  
 
 
 }
