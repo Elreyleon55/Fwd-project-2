@@ -1,8 +1,6 @@
 
-console.log("I am connected");
 
-
-
+//declarrying my variables
 
 const hamburgerMenu = document.querySelector(".hamburger");
 const menu = document.querySelector(".main-navigation-mobile-section");

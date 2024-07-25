@@ -1,9 +1,18 @@
-// @include bodyFont
+
+@use 'variables' as * ;
+
+
 footer {
-    background-color: #1B71A9;
+    background-color: #084d7b;
     height: 3rem;
 }
 
 footer p {
+
+    padding: .5rem;
     text-align: center;
+    color: #ffffff;
+    @include bodyFont
+
+
 }
