@@ -3,15 +3,16 @@
 
 
 footer {
-    background-color: #084d7b;
+    background-color: #005991;
     height: 3rem;
 }
 
 footer p {
-
+    color: #ffffff;
     padding: .5rem;
     text-align: center;
+    @include bodyFont
 
 }
-// @include bodyFont
+
 

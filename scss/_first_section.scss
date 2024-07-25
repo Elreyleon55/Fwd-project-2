@@ -2,10 +2,10 @@
 
 .banner-section {
     @include headFont;
-    // margin: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
     
 }
 
@@ -20,7 +20,7 @@ blockquote{
         height: 15rem;
         display: block;
         // position: relative;
-        margin-bottom: 1rem;
+        margin-bottom: 0.25rem;
     }
     
    .banner-section h2 {
@@ -29,7 +29,7 @@ blockquote{
     background-color: #00000080;
     padding: 0.5rem;
     font-size: 1.5rem;
-    bottom: 1rem;
+    bottom: .25rem;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -45,9 +45,16 @@ blockquote{
                 " mussel mussel "
                 " salad pancake"
             ;
+            gap: 0.25rem .25rem;
+        }
+
+        .banner-section img {
+            margin: 0;
         }
 
         .mussel-picture { grid-area: mussel;}
         .salad-picture { grid-area: salad;}
         .pancake-picture { grid-area: pancake;}
+
+    
     }

@@ -5,10 +5,9 @@
 .food-info-2 {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: .625rem;
   padding: 20px;
-  max-width: 600px;
+  //max-width: 600px; 
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
   display: flex; 
@@ -29,7 +28,6 @@
   /*max-width: 100%; */
   height: auto; 
   margin-bottom: 10px; 
-
   width: -webkit-fill-available;
 
 }
@@ -41,7 +39,6 @@
   background-color: #1b71a9; 
   color: #fff; 
   text-decoration: none; 
-
   font-weight: bold;
 }
 
@@ -71,7 +68,7 @@
   font-size: 1em; 
   color: #333; 
   margin-top: 0;
-  margin-bottom: 10px; 
+  margin-bottom: .10px; 
 
 
 }
