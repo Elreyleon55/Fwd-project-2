@@ -9,7 +9,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100;
+  width: 100%;
   height: 100%;
 }
 
@@ -22,14 +22,53 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
   box-sizing: border-box;
+  max-width: 65rem;
 }
 
-// @media (min-width: 67.3125rem) {
-
-//   .site-wrapper, body {
-//       max-width:fit
-//   }
-// }
 
 
+
+@media (min-width: 48.125rem){
+
+
+  header,
+  footer {
+    max-width: 65rem;
+  }
+  
+  .site-wrapper {
+    display: grid;
+    grid-template-columns: 48.75rem 16.25rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "banner sidebar"
+      "articles sidebar"
+      "older ."
+    ;
+
+  }
+
+  .banner-section { grid-area: banner;}
+  .sidebar { grid-area: sidebar;}
+  .food-articles { grid-area: articles;}
+  .olrder-post { grid-area: older; }
+  .site-wrapper { grid-area: main;}
+ 
+
+  html {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-articles {
+    margin: 0 0.5rem;
+    width: 48.75rem;
+  }
+
+  .sidebar {
+    margin: 0 0.5rem;
+  }
+}
 
