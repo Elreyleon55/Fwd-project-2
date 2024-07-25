@@ -9,10 +9,12 @@ footer {
 
 footer p {
     color: #ffffff;
-    padding: .5rem;
+    padding: 1rem;
+    font-size: .625rem;
+    align-content: center;
     text-align: center;
     @include bodyFont
-
+    
 }
 
 
