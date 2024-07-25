@@ -377,6 +377,7 @@ width: 4rem;
     display: block;
     display: flex;
     gap: 15px;
+    @include hover-icons-500();
     svg{
       fill: $mainColor;
       width: 1.5rem;
