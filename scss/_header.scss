@@ -170,8 +170,31 @@ width: 4rem;
 
 
 
- 
-}
+@media (min-width: 20.625em) {
+
+
+
+
+  .header-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    // gap: 20px;
+  }
+
+
+  .mobile-logo {
+    visibility: hidden;
+    
+  }
+
+  .desktop-logo {
+    visibility: visible;
+    width: 200px;
+    height: auto;
+  }
+  }
+
 
 
 //height for drop down start a 0 and then when opend go to 15.7rem 
