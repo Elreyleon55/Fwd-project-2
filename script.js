@@ -1,5 +1,4 @@
-//connection check
-console.log("hello I am connected");
+
 
 //declarrying my variables
 
