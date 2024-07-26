@@ -196,7 +196,8 @@ width: 4rem;
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  background-color: rgb(199, 199, 199);
+  background-color: #DEDEDE;
+  @include boxshadow-inner-searchbar();
   color: black;
   border-radius: 7px;
   input {
@@ -377,7 +378,7 @@ width: 4rem;
 
 
      .search-bar-drop-down {
-      background-color: rgb(219, 219, 219);
+     @include boxshadow-inner-searchbar-500();
       color: black;
       img {
         width: 1.5rem;
@@ -402,14 +403,17 @@ width: 4rem;
 
 @media (min-width: 65em) {
 
+
+
 .top-part {
   width: 100%;
   gap: 35rem;
 }
 
 .bottom-part{
- 
-  .dropdown-sections{
+ width: 100%;
+
+  .dropdown-sections-500{
     background-color: $maiinColorALittleDarker;
     ul {
       background-color: $mainColor;
