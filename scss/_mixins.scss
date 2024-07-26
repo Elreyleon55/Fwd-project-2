@@ -187,3 +187,11 @@
   }
 }
 
+@mixin boxshadow-inner-searchbar(){
+  box-shadow: inset 0px 0px 4px grey;
+}
+//box shadow mixing top and bottom
+@mixin boxshadow-inner-searchbar-500(){
+  box-shadow: inset 0px 0px 4px rgb(162, 162, 162);
+}
+
