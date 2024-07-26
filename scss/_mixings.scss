@@ -154,30 +154,6 @@
   
 }
 
- //hoverstates for svgs
-
-//  @mixin hover-state(){
-    
-//   .f-grey:hover {
-//     display: block;
-//     transform: translateY(1.16rem);
-//       transition: 3s ease-in-out;
-//   }
-
-
-//   // .f-blue:hover {
-//   //     transform: translateY(-1.16rem);
-//   //     transition: 3s ease-in-out;
-//   // }
-
-//     :hover {
-//       display: block;
-//       transform: translateY(-1.16rem);
-      
-    
-//   }
-//  }
-
 @mixin hover-icons-500(){
   svg:hover {
     cursor: pointer;
