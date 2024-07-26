@@ -135,7 +135,7 @@ width: 4rem;
       overflow: hidden;
       background-color: white;
       padding: 0;
-      @include hover-state();
+      padding-top: 4px
     }
     
 
@@ -299,7 +299,6 @@ width: 4rem;
       background-color: $maiinColorALittleDarker;
       .dropdown-sections,
       .top-part {
-            
         margin: 0 0.5rem;
 
         ul {
