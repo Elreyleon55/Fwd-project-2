@@ -55,15 +55,6 @@ body {
   .food-articles { grid-area: articles;}
   .older-post { grid-area: older; }
   .site-wrapper { grid-area: main;}
- 
-
-  html {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
 
 
   .food-articles {
