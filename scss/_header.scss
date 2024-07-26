@@ -355,6 +355,9 @@ width: 4rem;
   .header-section-500 {
     .top-part {
       padding-right: 10px;
+      max-width: 65rem; 
+      margin: 0 auto;
+      width: 100%;
     }
     .search-bar {
       transform: translateX(1.5rem);
