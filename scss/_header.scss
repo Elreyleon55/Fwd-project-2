@@ -19,7 +19,9 @@
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section 
+// .site-wrapper 
+{
   max-width: 100%;
   overflow: hidden;
 }
@@ -32,7 +34,9 @@ width: 4rem;
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section
+//  .site-wrapper 
+ {
   max-width: 100%;
   overflow: hidden;
 }
@@ -50,7 +54,9 @@ $textcolor: white;
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section
+// .site-wrapper 
+{
   max-width: 100%;
   overflow: hidden;
 }
@@ -158,6 +164,7 @@ width: 4rem;
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    max-width: 65rem;
     
     li {
       border: 0.5px solid rgb(70, 70, 70);
@@ -290,7 +297,8 @@ width: 4rem;
 
     .bottom-part {
       background-color: $maiinColorALittleDarker;
-      .dropdown-sections {
+      .dropdown-sections,
+      .top-part {
             
         margin: 0 0.5rem;
 
@@ -405,7 +413,6 @@ width: 4rem;
   .dropdown-sections{
     background-color: $maiinColorALittleDarker;
     ul {
-      max-width: 61.75rem;
       background-color: $mainColor;
     }
   }
