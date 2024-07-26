@@ -154,8 +154,6 @@ width: 4rem;
 
 // for dropdown section in
 .dropdown-sections {
-
-  background-color: rgb(98, 98, 255);
   
   ul{
     display: flex;
@@ -197,7 +195,7 @@ width: 4rem;
   justify-content: space-between;
   padding: 5px;
   background-color: #DEDEDE;
-  @include boxshadow-inner-searchbar();
+  // @include boxshadow-inner-searchbar();
   color: black;
   border-radius: 7px;
   input {
@@ -378,7 +376,7 @@ width: 4rem;
 
 
      .search-bar-drop-down {
-     @include boxshadow-inner-searchbar-500();
+    //  @include boxshadow-inner-searchbar-500();
       color: black;
       img {
         width: 1.5rem;
