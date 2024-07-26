@@ -17,14 +17,26 @@
   display: none;
 }
 
-//creating variables will have to eatierh delete or move later.
 
-// $backcolor: #1b71a9;
-// $textcolor: white;
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section 
+// .site-wrapper 
+{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
+
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section
+//  .site-wrapper 
+ {
   max-width: 100%;
   overflow: hidden;
 }
@@ -42,25 +54,9 @@ $textcolor: white;
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-//this image of a just to adjust to later delete
-.mussels-picture {
-width: 4rem;
-}
-//creating variables will have to eatierh delete or move later.
-
-$backcolor: #1B71A9;
-$textcolor: white;
-
-
-
-
-// to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section
+// .site-wrapper 
+{
   max-width: 100%;
   overflow: hidden;
 }
@@ -95,7 +91,6 @@ width: 4rem;
    border: 0.5px solid rgb(0, 0, 61);
    background-color: rgb(199, 199, 199);
     max-height: 500px;
-    // transition: max-height 3s ease-in;
 
     .facebook {
       display: flex;
@@ -132,49 +127,27 @@ width: 4rem;
     }
 
     //setting colors for svgs
-
-  
     .container-li-icons {
       display: flex;
       flex-direction: row;
       justify-content: center;
-
       gap: 12px;
       overflow: hidden;
       background-color: white;
       padding: 0;
-
-      @include hover-state();
-
-      
+      padding-top: 4px
     }
     
 
   .search-bar {
-
     @include search-bar();
-    // display: flex;
-    // justify-content: space-between;
-    // padding: 5px;
-    // background-color: rgb(199, 199, 199);
-    // color: black;
-    // border-radius: 7px;
-    
     @include input();
-    // input {
-    //   background: transparent;
-    //   border: none;
-    //   width: 100%;
-    // }
-    
   }
 }
 
 
 .main-navigation-mobile-section.open {
   max-height: 500px;
-  // height: 500px;
-    // transition: max-height 3s ease-in;
 }
 
 
@@ -191,15 +164,14 @@ width: 4rem;
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    max-width: 65rem;
     
     li {
-      // width: 100%;
       border: 0.5px solid rgb(70, 70, 70);
       padding: 5px;
       color: white;
       background-color: $mainColor;
       transition: all 0.3s ease;
-      // mix-blend-mode: difference;
       &:last-child {
         padding: 0;
       }
@@ -217,16 +189,15 @@ width: 4rem;
         color: $backcolor;
       }
     }
-
-  }
-
+  }}
+    
   
-
  .search-bar {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  background-color: rgb(199, 199, 199);
+  background-color: #DEDEDE;
+  @include boxshadow-inner-searchbar();
   color: black;
   border-radius: 7px;
   input {
@@ -252,7 +223,6 @@ width: 4rem;
   .header-section {
     display: flex;
     justify-content: space-between;
-    // gap: 20px;
   }
 
 
@@ -265,7 +235,6 @@ width: 4rem;
     display: block;
     width: 70%;
     height: auto;
-    // transform: translateX(-65px)
     max-width: 350px;
   }
 }
@@ -323,17 +292,15 @@ width: 4rem;
         padding: 0.1rem;
       }
       input {
-        // padding: 5px;
-        width: 3.25rem;
+        width: 7.1rem;
       }
     }
 
     .bottom-part {
-      background-color: darkblue;
-      .dropdown-sections {
-            
-        width: 95%;
-        margin: 0 auto;
+      background-color: $maiinColorALittleDarker;
+      .dropdown-sections,
+      .top-part {
+        margin: 0 0.5rem;
 
         ul {
           flex-direction: row;
@@ -357,11 +324,9 @@ width: 4rem;
   
   ul {
     flex-direction: row;
-    // font-size: 110%;
     li {
       width: 100%;
       border: none;
-      // font-size: 110%;
       a{
         font-size: 1.4rem;
       }
@@ -376,17 +341,16 @@ width: 4rem;
     display: block;
     display: flex;
     gap: 15px;
-    img{
-
+    @include hover-icons-500();
+    svg{
+      fill: $mainColor;
       width: 1.5rem;
       height: 1.5rem;
     }
   }
  
   .search-bar {
-    // transform: translateX(2rem);
     width: 10%;
-
   }
 
   .header-section-500 {
@@ -399,30 +363,64 @@ width: 4rem;
   
     }
 
-    .desktop-logo{
-      
-    }
-  
-
   }
 
 }
-
 //770px
 @media (min-width: 48.1em) {
   //old search bar
+  .bottom-part {
+    .dropdown-sections {
+
+      a {
+        font-size: 1.5rem;
+      }
+
+
+     .search-bar-drop-down {
+     @include boxshadow-inner-searchbar-500();
+      color: black;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+      }
+      @include search-bar();
+      border-radius: 0;
+        input {
+          background: transparent;
+          border: none;
+        }
+     }
+    }
+  }
+  
   .search-bar {
     display: none;
   }
-  //new seach bar
-  .search-bar-drop-down {
-    display: block;
-    @include search-bar();
-
-    @include input();
-   
-  }
-
-
 }
+//for when body maxis out wisth and bacjground and sider keeps expanding
+
+@media (min-width: 65em) {
+
+
+
+.top-part {
+  width: 100%;
+  gap: 35rem;
+}
+
+.bottom-part{
+ width: 100%;
+
+  .dropdown-sections-500{
+    background-color: $maiinColorALittleDarker;
+    ul {
+      background-color: $mainColor;
+    }
+  }
+}
+
+
+
 }
