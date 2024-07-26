@@ -13,6 +13,12 @@ html, body {
   height: 100%;
 }
 
+.site-wrapper {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+
 body {
   background-image: $backGroundImage;
   background-size: auto;
@@ -23,7 +29,7 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
   box-sizing: border-box;
-  max-width: 65rem;
+  // max-width: 65rem;
 }
 
 
@@ -31,15 +37,10 @@ body {
 
 @media (min-width: 48.125rem){
 
-
-  header,
-  footer {
-    max-width: 65rem;
-  }
   
   .site-wrapper {
     display: grid;
-    grid-template-columns: 48.75rem 16.25rem;
+    grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: 
       "banner sidebar"
@@ -63,13 +64,24 @@ body {
     align-items: center;
   }
 
+
+
   .food-articles {
-    margin: 0 0.5rem;
-    width: 48.75rem;
+    // margin: 0 0.5rem;
+    max-width: 48.75rem;
+    width: 100%;
   }
 
-  .sidebar {
-    margin: 0 0.5rem;
-  }
+  // .sidebar {
+  //   margin: 0 0.5rem;
+
+  // }
 }
+
+.sidebar {
+    min-width: 16.25rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 
