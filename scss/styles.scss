@@ -1,10 +1,13 @@
 
-@import'base';
-@import 'header';
-@import 'variables';
-@import 'reset';
-@import 'latestRecipes';
-@import 'footer';
-@import 'food_article':
+@use 'latestRecipes';
+@use 'base';
+@use 'header';
+@use 'variables';
+@use 'reset';
+@use 'cuisines';
+@use 'footer';
+@use 'food_article';
+
+@use 'first_section';
 
 

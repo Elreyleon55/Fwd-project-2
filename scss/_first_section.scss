@@ -1,0 +1,64 @@
+@use 'variables' as * ;
+
+.banner-section {
+    @include headFont;
+    margin: 0.5rem;
+}
+
+blockquote{
+    position: relative;
+}
+
+    .banner-section img {
+        // flex-direction: column;
+        width: 100%;
+        object-fit: cover;
+        height: 15rem;
+        display: block;
+        // position: relative;
+        margin-bottom: 0.25rem;
+    }
+    
+   .banner-section h2 {
+    position: absolute;
+    color: #ffffff;
+    background-color: #00000080;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    }
+
+@media (min-width: 41.625rem) {
+
+        .banner-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                " mussel mussel "
+                " salad pancake"
+            ;
+            gap: 0.25rem .25rem;
+            width: 100%;
+        }
+
+        .banner-section img {
+            margin: 0;
+        }
+
+        .mussel-picture { grid-area: mussel;}
+        .salad-picture { grid-area: salad;}
+        .pancake-picture { grid-area: pancake;}
+
+    
+    }
+
+@media (min-width: 48.125rem) {
+    .banner-section {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

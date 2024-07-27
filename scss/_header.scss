@@ -1,4 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
 
+
+//setting my tablet nav dispay to none by default 
+.header-section-500 {
+  display: none;
+}
+
+//getting for my icons for tablet mode off
+.icons-500 {
+  display: none;
+}
+
+//getting the search bar for desktopmode off 
+.search-bar-drop-down {
+  display: none;
+}
+
+
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section 
+// .site-wrapper 
+{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
+
+
+
+// to keep the background image not overflowing 
+.header-section, .main-navigation-mobile-section
+//  .site-wrapper 
+ {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+//this image of a just to adjust to later delete
+.mussels-picture {
+width: 4rem;
+}
 //creating variables will have to eatierh delete or move later.
 
 $backcolor: #1B71A9;
@@ -8,7 +54,9 @@ $textcolor: white;
 
 
 // to keep the background image not overflowing 
-.header-section, .main-navigation-mobile-section, .site-wrapper {
+.header-section, .main-navigation-mobile-section
+// .site-wrapper 
+{
   max-width: 100%;
   overflow: hidden;
 }
@@ -20,94 +68,134 @@ width: 4rem;
 //hiding elemetns that are not needed for now
 
 .desktop-logo {
-  visibility: hidden;
+  display: none;
 }
 
 
 //header section
 .header-section {
-  flex-wrap: wrap;
-  box-sizing: border-box;
   background-color: white;
   align-items: center;
-  overflow: hidden;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  height: 3rem;
    .hamburger {
-    width: 27px; 
-    height: 27px; 
+    width: 1.6875rem; 
+    height: 1.6875rem; 
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: .3125rem;
    }
 }
 
 .main-navigation-mobile-section {
   border: 0.5px solid rgb(0, 0, 61);
-  .search-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: rgb(199, 199, 199);
-    color: black;
-    border-radius: 7px;
-    input {
-      background: transparent;
-      border: none;
+  background-color: rgb(199, 199, 199);
+  max-height: 31.25rem;
+
+    .facebook {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .f-blue {
+        fill: $mainColor;
+      }
+      .f-grey {
+        fill: grey;
+      }
     }
+    .google {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      .g-blue {
+        fill: $mainColor;
+      }
+      .g-grey {
+        fill: grey;
+      }
+    }
+    .twitter {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      .t-blue {
+        fill: $mainColor;
+      }
+      .t-grey {
+        fill: grey;
+      }
+    }
+
+    //setting colors for svgs
+    .container-li-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      overflow: hidden;
+      background-color: white;
+      padding: 0;
+      padding-top: .25rem;
+    }
+    
+
+  .search-bar {
+    @include search-bar();
+    @include input();
   }
 }
 
 
+.main-navigation-mobile-section.open {
+  max-height: 31.25rem;
+}
+
+
+
 // for dropdown section in
-
-//creating variables will have to eatierh delete or move later.
-
-
-
 .dropdown-sections {
- ul{
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  ul:hover {
-    background-color: red;
-  }
   
-  li {
-    // width: 100%;
-    border: 0.5px solid rgb(70, 70, 70);
-    padding: 5px;
-    color: white;
-    background-color:#1B71A9;
-    transition: all 0.3s ease;
-    mix-blend-mode: difference;
-    a {
-      text-decoration: none;
+  ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 63.7rem;
+    
+    li {
+      border: 0.5px solid rgb(70, 70, 70);
+      padding: 7.5px;
       color: white;
+      background-color: $mainColor;
+      transition: all 0.3s ease;
+      &:last-child {
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    
     }
-  }
-  li:hover {
-    color: $backcolor;
-    background-color: $textcolor;
-    cursor: pointer;
-    a {
+    li:hover {
       color: $backcolor;
+      background-color: $textcolor;
+      cursor: pointer;
+      a {
+        color: $backcolor;
+      }
     }
-  }
+  }}
+    
   
- }
-
  .search-bar {
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  background-color: rgb(199, 199, 199);
+  background-color: #DEDEDE;
+  @include boxshadow-inner-searchbar();
   color: black;
   border-radius: 7px;
   input {
@@ -116,32 +204,225 @@ width: 4rem;
   }
 }
 .li-icons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  padding: 0;
   background-color: white;
+  max-height: 1.7rem;
+  svg {
+    width: 1.125rem; 
+    height: 1.125rem; 
+    transform: translateY(0.3rem);
+  }
+  
 }
 
-.icon-facebook {
-  width: 18px; 
-  height: 18px; 
+//switching mobile logo to desktop
+@media (min-width: 20.625em) {
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .mobile-logo {
+    display: none;
+    
+  }
+
+  .desktop-logo {
+    display: block;
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+  }
 }
 
-.icon-google {
-  width: 18px; 
-  height: 18px; 
+  .search-bar {
+    display: block;
+    display: flex;
+    visibility: visible;
+    }
+
+//taking apart the li dropdown & adding evrything except the logos
+
+//500px
+@media (min-width: 31.25em) {
+
+
+//tunring off the mobile header
+  .header-section {
+    display: none;
+  }
+
+  .main-navigation-mobile-section.open{
+    display: none;
+  }
+    .li-icons {
+      display: none;
+    }
+
+
+  .header-section-500{
+    display: block;
+    background-color: white;
+
+    .top-part {
+      display: flex;
+      padding: 1.25rem 0.4rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .desktop-logo {
+      width: 55%;
+      height: 2.2rem;
+    }
+
+    .search-bar {
+      justify-content: space-between;
+      width: 30%;
+      height: 2.5rem;
+      align-items: center;
+      
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.1rem;
+      }
+      input {
+        width: 7.1rem;
+      }
+    }
+
+    .bottom-part {
+      background-color: $maiinColorALittleDarker;
+      .dropdown-sections{
+        margin: 0 0.5rem;
+
+        ul {
+          flex-direction: row;
+          li {
+            width: 100%;
+            border: none;
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
-.icon-twitter {
-  width: 18px; 
-  height: 18px; 
+//680px
+@media (min-width: 42.5em) {
+  
+  ul {
+    flex-direction: row;
+    li {
+      width: 100%;
+      border: none;
+      align-items: center;
+      a{
+        @include navFont;
+      }
+    }
+  }
+
 }
 
-
-
+//700px
+@media (min-width: 43.75em) {
+  .icons-500 {
+    display: block;
+    display: flex;
+    gap: 15px;
+    @include hover-icons-500();
+    svg{
+      fill: $mainColor;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
  
+  .search-bar {
+    width: 10%;
+  }
+
+  .header-section-500 {
+    .top-part {
+      padding-right: 20px;
+      padding-left: 20px;
+      max-width: 63rem; 
+      margin: 0 auto;
+      width: 100%;
+    }
+    .search-bar {
+      transform: translateX(1.5rem);
+      width: 25%;
+  
+    }
+
+  }
+
+}
+//770px
+@media (min-width: 48.125em) {
+  //old search bar
+  .bottom-part {
+    .dropdown-sections {
+
+      a {
+        @include navFont;
+      }
+
+
+     .search-bar-drop-down {
+     @include boxshadow-inner-searchbar-500();
+      color: black;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+      }
+      @include search-bar();
+      border-radius: 0;
+        input {
+          background: transparent;
+          border: none;
+        }
+     }
+    }
+  }
+  
+  .search-bar {
+    display: none;
+  }
+}
+//for when body maxis out wisth and bacjground and sider keeps expanding
+
+@media (min-width: 65em) {
+
+
+
+.top-part {
+  width: 100%;
+  gap: 35rem;
+}
+
+.bottom-part{
+ width: 100%;
+
+  .dropdown-sections-500{
+    background-color: $maiinColorALittleDarker;
+    ul {
+      background-color: $mainColor;
+    }
+  }
 }
 
 
-//height for drop down start a 0 and then when opend go to 15.7rem 
 
+}

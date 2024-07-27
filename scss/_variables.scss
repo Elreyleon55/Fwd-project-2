@@ -1,2 +1,60 @@
-//variable for background image
-$backGroundImage: url('../images/bg.jpg');
+//variables
+
+    //variable for background image
+    $backGroundImage: url('../images/bg.jpg');
+
+
+    // header and button background colors
+    $mainColor: #1B71A9;
+    $maiinColorALittleDarker: #145580;
+    $greycolor: #DDDDDD;
+
+//breakpoints
+
+    //mobile large
+
+    $mobileLarge: 20.625em;
+
+    //tablet small
+
+    $tabletSmall: 31.25em;
+
+    //tablet large
+
+    $tabletLarge: 43.75em;
+
+    //desktop
+
+    $desktop: 48.125em;
+
+    //banner change
+
+    $bannerChange: 41.875rem;
+
+    //max-width
+
+    $maxWidth: 65rem;
+
+
+// fonts mixins
+
+    @mixin navFont {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @mixin headFont {
+        font-family: "Roboto Condensed", sans-serif;
+        // font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @mixin bodyFont {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
